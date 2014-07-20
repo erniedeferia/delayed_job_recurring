@@ -1,8 +1,9 @@
 # delayed\_job\_recurring\_mongoid
 
+This gem was forked from https://github.com/amitree/delayed_job_recurring in order to convert the code to support Mongoid. The remaining text in this file is the original.
+
 Extends delayed\_job\_mongoid to support recurring jobs.
 
-(this was forked and the name modified)
 
 ## Usage
 
