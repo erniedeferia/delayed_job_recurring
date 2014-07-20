@@ -149,10 +149,10 @@ module Delayed
       # Show all jobs for this schedule
       def jobs
         handler_name_1 = "--- !ruby\/object:#{name}[\s+]"
-        handler_name_regex_1 = Regex.new handler_name_1
+        handler_name_regex_1 = Regexp.new handler_name_1
         
         handler_name_2 = "--- !ruby\/object:#{name}$"
-        handler_name_regex_2 = Regex.new handler_name_2
+        handler_name_regex_2 = Regexp.new handler_name_2
         
         ::Delayed::Job.or({handler: handler_name_regex_1}, {handler: handler_name_regex_2})
       end
