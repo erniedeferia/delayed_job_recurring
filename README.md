@@ -1,6 +1,8 @@
-# delayed\_job\_recurring
+# delayed\_job\_recurring\_mongoid
 
-Extends delayed\_job to support recurring jobs.
+Extends delayed\_job\_mongoid to support recurring jobs.
+
+(this was forked and the name modified)
 
 ## Usage
 
