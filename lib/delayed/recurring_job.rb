@@ -154,7 +154,7 @@ module Delayed
         handler_name_2 = "--- !ruby\/object:#{name}$"
         handler_name_regex_2 = Regexp.new handler_name_2
         
-        ::Delayed::Job.or({handler: handler_name_regex_1}, {handler: handler_name_regex_2})
+        ::Delayed::Job.or({handler: /--- !ruby\/object:#{name}[\s+]/}, {handler: /--- !ruby\/object:#{name}$/} )
       end
 
       # Remove all jobs for this schedule (Stop the schedule)
